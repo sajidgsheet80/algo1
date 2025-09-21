@@ -6,7 +6,7 @@ import pandas as pd
 from functools import reduce
 import time
 from collections import defaultdict, deque
-
+import os
 # ---- Credentials ----
 client_id = "UBKM03VNIB-100"
 secret_key = "VCPXAFC291"
@@ -259,5 +259,6 @@ def index():
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 5000))
     app.run(host="0.0.0.0", port=port)
+
 
 
