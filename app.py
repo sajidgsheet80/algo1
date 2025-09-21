@@ -11,7 +11,7 @@ import os
 # ---- Credentials ----
 client_id = "VMS68P9EK0-100"
 secret_key = "ZJ0CFWZEL1"
-redirect_uri = "https://127.0.0.1/callback"
+redirect_uri = "https://127.0.0.1:5000/callback"
 grant_type = "authorization_code"
 response_type = "code"
 state = "sample"
@@ -229,3 +229,4 @@ def index():
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 5000))
     app.run(host="0.0.0.0", port=port)
+
